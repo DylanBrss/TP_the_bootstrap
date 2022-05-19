@@ -1,0 +1,72 @@
+$font-family_1: 'Lato', sans-serif;
+$font-family_2: 'Sanchez', serif;
+
+$color_h2 : #000;
+
+$background-color_h2 : #000;
+$background-color_1 : #CCF6E0;
+
+body {
+    font-family: $font-family_1;
+
+    h2 {
+        color: $color_h2;
+        font-size: 250%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-weight: 300;
+        word-spacing: 8px;
+
+        &:after {
+            display: block;
+            height: 2px;
+            background-color: $background-color_h2;
+            width: 100px;
+            content: " ";
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    }
+    
+    #header {
+        background-image: linear-gradient(rgba(0, 242, 96, 0.3), rgba(7, 117, 230, 0.7)),
+            url(../images/header.jpg);
+        height: 50vw;
+        background-size: cover;
+        background-position: center;
+    }
+    #familles_the {
+        background-color: $background-color_1;
+    }
+
+    #galeries_photos {
+
+        #the1 {
+            height: 50vh;
+            width: 100%;
+        }
+
+        #the2 {
+            height: 50vh;
+            width: 100%;
+        }
+
+        #the3 {
+            height: 50vh;
+            width: 100%;
+        }
+
+        #the4 {
+            height: 50vh;
+            width: auto;
+        }
+
+        #the5 {
+            height: 50vh;
+            width: auto;
+        }
+    }
+}

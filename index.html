@@ -1,28 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- CSS bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Thé</title>
 </head>
+
 <body>
-    <header>
-        <img src="./images/header.jpg">
-    </header>
+  <header>
+    <div class=" container"></div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" href="#">
+          <h4>Boutique de Thé</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row align-self-start">
+          <div class="col">
+            <div class="collapse navbar-collapse ms-3" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Qui sommes-nous</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nos_produits">Nos produits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galeries_photos">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nos packs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
     <div>
+      <section id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h1 class="text-light">l'art du <span class="fw-bold">thé</span></h1>
+              <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <button type="button" class="btn btn-light btn-lg">Nos produits</button>
+              <button type="button" class="btn btn-outline-light btn-lg">Contactez-nous</button>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+    </div>
+    </section>
+  </header>
+
+  <section id="nos_produits">
+    <div class="title">
+      <h2>nos produit</h2>
+    </div>
+
+    <div class="container">
+      <div class="d-flex flex-row">
+        <div class="col">
+          <img src="./images/tea.png">
+        </div>
+        <div class="d-flex flex-column ms-4 align-self-center">
+          <h3 class="text-dark text-uppercase">produit bio</h3>
+          <P class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate culpa nesciunt. Saepe tempore
+            blanditiis reprehenderit explicabo officia cupiditate a itaque. Consequuntur, dolorem voluptatibus.
+            Accusantium tempora odit libero provident tenetur.</P>
+          <br>
+
+          <h3 class="text-dark text-uppercase">produit bio</h3>
+          <P class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate culpa nesciunt. Saepe tempore
+            blanditiis reprehenderit explicabo officia cupiditate a itaque. Consequuntur, dolorem voluptatibus.
+            Accusantium tempora odit libero provident tenetur.</P>
+          <br>
+
+          <h3 class="text-dark text-uppercase">produit bio</h3>
+          <P class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate culpa nesciunt. Saepe tempore
+            blanditiis reprehenderit explicabo officia cupiditate a itaque. Consequuntur, dolorem voluptatibus.
+            Accusantium tempora odit libero provident tenetur.</P>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="familles_the" class="pb-4">
+    <div class="title">
+      <h2>familles des thés</h2>
+    </div>
+
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="./images/the-noir.png" class="card-img-top" alt="the_noir">
+              <div class="card-body">
+                <h3 class="card-title text-center text-dark text-uppercase">thé noir</h3>
+                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aemean commodo ligula eget
+                  dolor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./images/the-jaune.png" class="card-img-top" alt="the_noir">
+              <div class="card-body">
+                <h3 class="card-title text-center text-dark text-uppercase">thé jaune</h3>
+                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aemean commodo ligula eget
+                  dolor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./images/the-vert.png" class="card-img-top" alt="the_noir">
+              <div class="card-body">
+                <h3 class="card-title text-center text-dark text-uppercase">thé vert</h3>
+                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aemean commodo ligula eget
+                  dolor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeries_photos">
+    <h2>galeries photo</h2>
+
+    <div class="container">
+
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-4  mb-4">
+            <div class="card text-white">
+              <img src="./images/the1.jpg" class="card-img" alt="the1" id="the1">
+              <div class="card-img-overlay">
+                <h3 class="card-title fw-light text-uppercase">image 1 thé</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="card text-white">
+              <img src="./images/the2.jpg" class="card-img img-fluid" alt="the2" id="the2">
+              <div class="card-img-overlay">
+                <h3 class="card-title fw-light text-uppercase">image 2 thé</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="row">
+
+          <div class="col-5">
+            <div class="card text-white">
+              <img src="./images/the3.jpg" class="card-img" alt="the3" id="the3">
+              <div class="card-img-overlay">
+                <h3 class="card-title fw-light text-uppercase">image 3 thé</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="card text-white">
+              <img src="./images/the4.jpg" class="card-img" alt="the4" id="the4">
+              <div class="card-img-overlay">
+                <h3 class="card-title fw-light text-uppercase">image 4 thé</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card text-white">
+              <img src="./images/the5.jpg" class="card-img" alt="the5" id="the4">
+              <div class="card-img-overlay">
+                <h3 class="card-title fw-light text-uppercase">image 5 thé</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
-    <!-- JS Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+  </section>
+
+  <section id="il_ont_adore">
+    <h2>ils ont adoré</h2>
+
+    <div class="container">
+
+      <div class="container-fluid">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- JS Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+body h2 {
+  color: #000;
+  font-size: 250%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 300;
+  word-spacing: 8px;
+}
+
+body h2:after {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+body #header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.3)), to(rgba(7, 117, 230, 0.7))), url(../images/header.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.3), rgba(7, 117, 230, 0.7)), url(../images/header.jpg);
+  height: 50vw;
+  background-size: cover;
+  background-position: center;
+}
+
+body #familles_the {
+  background-color: #CCF6E0;
+}
+
+body #galeries_photos #the1 {
+  height: 50vh;
+  width: 100%;
+}
+
+body #galeries_photos #the2 {
+  height: 50vh;
+  width: 100%;
+}
+
+body #galeries_photos #the3 {
+  height: 50vh;
+  width: 100%;
+}
+
+body #galeries_photos #the4 {
+  height: 50vh;
+  width: auto;
+}
+
+body #galeries_photos #the5 {
+  height: 50vh;
+  width: auto;
+}
+/*# sourceMappingURL=style.css.map */
