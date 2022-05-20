@@ -1,72 +1,231 @@
 $font-family_1: 'Lato', sans-serif;
 $font-family_2: 'Sanchez', serif;
-
 $color_h2 : #000;
-
-$background-color_h2 : #000;
+$background-color_h2 : green;
 $background-color_1 : #CCF6E0;
+$background-color_btn : #038106;
 
-body {
-    font-family: $font-family_1;
+* {
+    padding: 0;
+    margin: 0;
 
-    h2 {
-        color: $color_h2;
-        font-size: 250%;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-        letter-spacing: -1px;
-        font-weight: 300;
-        word-spacing: 8px;
+    body {
+        font-family: $font-family_1;
 
-        &:after {
-            display: block;
-            height: 2px;
-            background-color: $background-color_h2;
-            width: 100px;
-            content: " ";
-            margin: 0 auto;
-            margin-top: 10px;
+        h2 {
+            font-size: 250%;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-weight: 300;
+            word-spacing: 8px;
+
+            &:after {
+                display: block;
+                height: 2px;
+                background-color: $background-color_h2;
+                width: 100px;
+                content: " ";
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+
+        /* ========== HEADER ==========*/
+        header {
+            background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+                    rgba(7, 117, 230, 0.6)),
+                url(../images/header.jpg);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .home-title {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+
+        .btn-full {
+            color: #5ee077;
+            background-color: #fff;
+
+            &:hover {
+                background-color: #5ee077;
+                color: #fff;
+            }
+        }
+
+        .btn-ghost {
+
+            &:hover {
+                background-color: #5ee077;
+                border: 1px solid #5ee077;
+                color: #fff;
+            }
+        }
+
+        #familles_the {
+            background-color: $background-color_1;
+        }
+
+        /* ========== GALERIE PHOTO ==========*/
+        #galeries_photos {
+
+            #the1 {
+                background-image: url(../images/the1.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 40vh;
+            }
+
+            #the2 {
+                background-image: url(../images/the2.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 40vh;
+            }
+
+            #the3 {
+                background-image: url(../images/the3.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 40vh;
+            }
+
+            #the4 {
+                background-image: url(../images/the4.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 40vh;
+            }
+
+            #the5 {
+                background-image: url(../images/the5.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 40vh;
+            }
+        }
+
+        /* ========== ILS ONT ADORE ==========*/
+        #il_ont_adore {
+            background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.6)),
+                url(../images/the-paysage.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+
+            h2 {
+
+                &:after {
+                    display: block;
+                    height: 2px;
+                    background-color: #fff;
+                    width: 100px;
+                    content: " ";
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+            }
+
+            img {
+                height: 10vh;
+            }
+        }
+
+        /* ========== PACKS ==========*/
+
+        #packs {
+            h2 {
+                color: $color_h2;
+                font-size: 250%;
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                font-weight: 300;
+                word-spacing: 8px;
+
+                &:after {
+                    display: block;
+                    height: 2px;
+                    background-color: $background-color_h2;
+                    width: 100px;
+                    content: " ";
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+            }
+
+            #card-center {
+                background-color: #34db3d;
+            }
+
+            .card {
+                h3 {
+                    color: #038106;
+                }
+
+                h2 {
+                    color: #000;
+                    font-size: 250%;
+                    text-align: center;
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                    font-weight: 300;
+                    word-spacing: 8px;
+
+                    &:after {
+                        display: block;
+                        height: 2px;
+                        background-color: lightgray;
+                        width: 0;
+                        content: " ";
+                        margin: 0 auto;
+                        margin-top: 10px;
+                    }
+                }
+
+                .ligne {
+
+                    &:after {
+                        display: block;
+                        height: 2px;
+                        background-color: lightgray;
+                        width: 100%;
+                        content: " ";
+                        margin: 0 auto;
+                        margin-top: 10px;
+                    }
+                }
+
+                .btn {
+                    background-color: $background-color_btn;
+                }
+            }
+        }
+
+        /* ========== CONTACT ==========*/
+        #contact {
+            .btn {
+                background-color: $background-color_btn;
+            }
         }
     }
-    
-    #header {
-        background-image: linear-gradient(rgba(0, 242, 96, 0.3), rgba(7, 117, 230, 0.7)),
-            url(../images/header.jpg);
-        height: 50vw;
-        background-size: cover;
-        background-position: center;
-    }
-    #familles_the {
-        background-color: $background-color_1;
-    }
+}
 
-    #galeries_photos {
-
-        #the1 {
-            height: 50vh;
-            width: 100%;
-        }
-
-        #the2 {
-            height: 50vh;
-            width: 100%;
-        }
-
-        #the3 {
-            height: 50vh;
-            width: 100%;
-        }
-
-        #the4 {
-            height: 50vh;
-            width: auto;
-        }
-
-        #the5 {
-            height: 50vh;
-            width: auto;
+@media screen and (max-width: 768px) {
+    body {
+        #il_ont_adore {
+            img {
+                height: 5vh;
+            }
         }
     }
 }

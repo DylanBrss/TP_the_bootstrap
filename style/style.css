@@ -1,8 +1,129 @@
-body {
-  font-family: "Lato", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body h2 {
+* body {
+  font-family: "Lato", sans-serif;
+  /* ========== HEADER ==========*/
+  /* ========== GALERIE PHOTO ==========*/
+  /* ========== ILS ONT ADORE ==========*/
+  /* ========== PACKS ==========*/
+  /* ========== CONTACT ==========*/
+}
+
+* body h2 {
+  font-size: 250%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 300;
+  word-spacing: 8px;
+}
+
+* body h2:after {
+  display: block;
+  height: 2px;
+  background-color: green;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+* body header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.4)), to(rgba(7, 117, 230, 0.6))), url(../images/header.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.6)), url(../images/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+* body .home-title {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+* body .btn-full {
+  color: #5ee077;
+  background-color: #fff;
+}
+
+* body .btn-full:hover {
+  background-color: #5ee077;
+  color: #fff;
+}
+
+* body .btn-ghost:hover {
+  background-color: #5ee077;
+  border: 1px solid #5ee077;
+  color: #fff;
+}
+
+* body #familles_the {
+  background-color: #CCF6E0;
+}
+
+* body #galeries_photos #the1 {
+  background-image: url(../images/the1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+* body #galeries_photos #the2 {
+  background-image: url(../images/the2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+* body #galeries_photos #the3 {
+  background-image: url(../images/the3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+* body #galeries_photos #the4 {
+  background-image: url(../images/the4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+* body #galeries_photos #the5 {
+  background-image: url(../images/the5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+* body #il_ont_adore {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.4)), to(rgba(7, 117, 230, 0.6))), url(../images/the-paysage.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.6)), url(../images/the-paysage.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* body #il_ont_adore h2:after {
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+* body #il_ont_adore img {
+  height: 10vh;
+}
+
+* body #packs h2 {
   color: #000;
   font-size: 250%;
   text-align: center;
@@ -14,50 +135,67 @@ body h2 {
   word-spacing: 8px;
 }
 
-body h2:after {
+* body #packs h2:after {
   display: block;
   height: 2px;
-  background-color: #000;
+  background-color: green;
   width: 100px;
   content: " ";
   margin: 0 auto;
   margin-top: 10px;
 }
 
-body #header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.3)), to(rgba(7, 117, 230, 0.7))), url(../images/header.jpg);
-  background-image: linear-gradient(rgba(0, 242, 96, 0.3), rgba(7, 117, 230, 0.7)), url(../images/header.jpg);
-  height: 50vw;
-  background-size: cover;
-  background-position: center;
+* body #packs #card-center {
+  background-color: #34db3d;
 }
 
-body #familles_the {
-  background-color: #CCF6E0;
+* body #packs .card h3 {
+  color: #038106;
 }
 
-body #galeries_photos #the1 {
-  height: 50vh;
+* body #packs .card h2 {
+  color: #000;
+  font-size: 250%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 300;
+  word-spacing: 8px;
+}
+
+* body #packs .card h2:after {
+  display: block;
+  height: 2px;
+  background-color: lightgray;
+  width: 0;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+* body #packs .card .ligne:after {
+  display: block;
+  height: 2px;
+  background-color: lightgray;
   width: 100%;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
-body #galeries_photos #the2 {
-  height: 50vh;
-  width: 100%;
+* body #packs .card .btn {
+  background-color: #038106;
 }
 
-body #galeries_photos #the3 {
-  height: 50vh;
-  width: 100%;
+* body #contact .btn {
+  background-color: #038106;
 }
 
-body #galeries_photos #the4 {
-  height: 50vh;
-  width: auto;
-}
-
-body #galeries_photos #the5 {
-  height: 50vh;
-  width: auto;
+@media screen and (max-width: 768px) {
+  body #il_ont_adore img {
+    height: 5vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
